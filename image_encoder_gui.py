@@ -14,7 +14,7 @@ class ImageEncoderApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Image to Base64 Encoder")
-        self.root.geometry("500x250")
+        self.root.geometry("400x250")
         small_icon = tk.PhotoImage(data=b64decode(ICON_16))
         large_icon = tk.PhotoImage(data=b64decode(ICON_32))
         self.root.iconphoto(False, large_icon, small_icon)
@@ -46,7 +46,8 @@ class ImageEncoderApp:
 
         self.filename_label = tk.Label(
             self.main_frame,
-            text="No file selected"
+            text="No file selected",
+            wraplength=400 # Wrap text if it exceeds 400 pixels
         )
         self.filename_label.grid(
             row=2, column=0, columnspan=2, sticky="W")
