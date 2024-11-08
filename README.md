@@ -1,6 +1,6 @@
-# Lucky 7 in Python
+# Image Encoder Base64
 
-A simple one armed bandit program in Python using CustomTkinter. This is a remake of one I did several years ago for an assignment for my Visual C# class. The Visual C# tutorial is included.
+A Python Tkinter program to encode images to base64 for inclusion of images in exe creators like [nuitka](https://pypi.org/project/Nuitka/).
 
 ## License
 
